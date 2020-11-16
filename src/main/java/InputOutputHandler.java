@@ -10,7 +10,6 @@ public class InputOutputHandler implements InputOutputHandlerInterface {
 
     @Override
     public boolean checkIfListOkay(String[] list) {
-
         for (String i : list) {
             try {
                 Integer.parseInt(i);
@@ -35,19 +34,4 @@ public class InputOutputHandler implements InputOutputHandlerInterface {
     public String[] stringToStringList(String string){
         return string.split(" ");
     }
-
-    // @Override
-    // public boolean convertStringListToIntList(String[] list) {
-    //     int[] integerList = new int[list.length];
-    //     int newInt;
-    //     for (int i = 0; i<=list.length; i++){
-    //         try {
-    //             newInt = Integer.parseInt(list[i]);
-    //         } catch (NumberFormatException e) {
-    //            //return ;
-    //         }
-    //         integerList[i] = newInt;
-    //     }
-    //     return true;
-    // }
 }

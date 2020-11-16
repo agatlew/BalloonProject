@@ -18,9 +18,12 @@ public class BalloonGame implements BalloonGameInterface {
 
         if (inputOutputHandler.checkIfListOkay(balloonList)) {
             calculateTotalPoints(balloonList);
-        } else {
+        }
+        /* Recursive call to ensure infinite game?
+        else {
             playGame();
         }
+        */
     }
 
     private void calculateTotalPoints(String[] listOfBalloons) {
